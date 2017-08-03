@@ -24,3 +24,8 @@ before_install:
   - "if [ $(phantomjs --version) != '2.1.1' ]; then tar -xvf $PWD/travis_phantomjs/phantomjs-2.1.1-linux-x86_64.tar.bz2 -C $PWD/travis_phantomjs; fi"
   - "hash -r"
   - "phantomjs --version"
+
+notifications:
+  email: false
+  slack:
+    secure: 1iYPmf/YSm31fZTPiM4OxG/Ii9H8J1eE/jNN0eCnA4wYPGh3SaoeCw9GpsnGWZ4wSuXUdRmGn5s5BFfTCp1RVcjJSo2TZnhhdIAavWlhmgnrdInQdXfZNfTKE7xCCAW+rW4pjrZZorEAGTYPNXV39AyNDMUsGF0sAnjM56ODXa93Xy+1+enIP95Pprxnqk2usxOlsLoQkVthMTFGgche5W1yEqY/rZxyIl3Q0YacVZpEzmPwsFG/Vgq7Vl8iLNcDzngNYeGmmomlR9WOw/DyHSag6FDb2AE1crXlx7yrBsbSo0sFKmDaJvjJrIDY2wkq/M75vMPwiOjzXVcXE1Tj1+LzJ1fbjEaEIoXwLGXtnSUC2u96je0iJSeudTLc2J7ah6vdec4H/tUPjXv9QLbKrP5xQlFItaks4J8DHVNUe22vVyFg6VVs5ZBkOqzwLH0Bj12vRKlW+P7xDF0mKYZRqigLeTqWJEpMRozlBycUXpdCxL2JVbzDd6q57mq67YPhVo5HNIlBfPt8nYlfx1gXJeyMj/cBu3sQSXsKXff6h+wjLUFsSO1il95BulrpRFO8THGOIJHsJlwgE11c+/3DZCU/lHYMY+XfS6qhoDWgKqhDl/8wie/THtaWX+VOEDxRdCES1GTn2x+R/jN6wp02zBPGsTASDCY0UXwQXv3ENB4=
