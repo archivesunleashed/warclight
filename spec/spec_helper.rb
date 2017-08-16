@@ -11,7 +11,7 @@ end
 require 'engine_cart'
 EngineCart.load_application!
 
-require 'rpsec/rails'
+require 'rspec/rails'
 
 require 'capybara/poltergeist'
 Cabybara.javascript_driver = :poltergeist
