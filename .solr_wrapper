@@ -2,4 +2,4 @@
 # port: 8983
 collection:
   dir: solr/conf/
-  name: warclight
+  name: blacklight-core
