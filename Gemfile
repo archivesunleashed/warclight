@@ -2,6 +2,8 @@
 
 source 'https://rubygems.org'
 
+gem 'codecov', require: false, group: :test
+
 # Declare your gem's dependencies in warclight.gemspec.
 gemspec
 # BEGIN ENGINE_CART BLOCK
