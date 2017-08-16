@@ -54,8 +54,8 @@ namespace :warclight do
   desc 'Seed fixture data to Solr'
   task :seed do
     puts 'Seeding index with data from spec/fixtures/warcs/...'
-    Dir.glob('spec/fixtures/warcs/*.gz').each do |file|
-      system("FILE=#{file} rake warclight:index") # no REPOSITORY_ID
-    end
+    # rubocop:disable Metrics/LineLength
+    system('wget -q -O ".internal_test_app/tmp/warc-indexer.jar" "https://www.dropbox.com/s/akjlu8budj80hxu/warc-indexer-3.0.0-SNAPSHOT-jar-with-dependencies.jar"')
+    system('java -Djava.io.tmpdir=.internal_test_app/tmp -jar .internal_test_app/tmp/warc-indexer.jar -i "York University Libraries" -n "Test Collection" -u "12345" -s http://localhost:8983/solr/warclight spec/fixtures/warcs/*.gz')
   end
 end
