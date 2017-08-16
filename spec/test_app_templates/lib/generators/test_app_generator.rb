@@ -3,7 +3,7 @@
 require 'rails/generators'
 
 class TestAppGenerator < Rails::Generators::Base
-  source_root "./spec/test_app_templates"
+  source_root './spec/test_app_templates'
 
   # if you need to generate any additional configuration
   # into the test app, this generator will be run immediately
@@ -26,4 +26,3 @@ class TestAppGenerator < Rails::Generators::Base
     generate 'warclight:install'
   end
 end
-
