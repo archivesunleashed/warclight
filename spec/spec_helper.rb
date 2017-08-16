@@ -14,8 +14,8 @@ EngineCart.load_application!
 require 'rspec/rails'
 
 require 'capybara/poltergeist'
-Cabybara.javascript_driver = :poltergeist
-Cabybara.default_max_wait_time = 15
+Capybara.javascript_driver = :poltergeist
+Capybara.default_max_wait_time = 15
 
 require 'warclight'
 

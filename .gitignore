@@ -12,6 +12,7 @@ pkg/
 
 # rspec failure tracking
 .rspec_status
+rspec_status
 
 .internal_test_app
 
