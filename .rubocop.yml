@@ -1,0 +1,66 @@
+require: rubocop-rspec
+
+AllCops:
+  Exclude:
+    - '.internal_test_app/**/*'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'lib/generators/warclight/templates/**/*'
+    - 'vendor/**/*'
+  TargetRubyVersion: 2.4
+  DisplayCopNames: true
+
+Rails:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - 'Gemfile'
+    - 'lib/warclight/custom_document.rb'  # XPaths get long
+    - 'lib/warclight/custom_component.rb' # XPaths get long
+
+Metrics/ModuleLength:
+  Max: 120
+
+Metrics/ClassLength:
+  Max: 120
+
+Metrics/BlockLength:
+  Exclude:
+    - !ruby/regexp /\.rake$/
+    - 'warclight.gemspec'
+    - 'spec/**/*'
+    - 'lib/warclight/custom_document.rb'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'lib/warclight/custom_document.rb' # warclight_field_definitions too long
+
+Performance/RegexpMatch:
+  Enabled: false
+
+Rails/OutputSafety:
+  Exclude:
+    - 'app/controllers/concerns/warclight/field_config_helpers.rb' # html_safe needs to be called to mimic BL JOIN behavior
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/FilePath:
+  Exclude:
+    - 'spec/lib/warclight/viewers/oembed_spec.rb' # Default file path is o_embed, and that looks weird
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 4
+
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'lib/warclight.rb'
+
+Bundler/DuplicatedGem:
+  Enabled: false
