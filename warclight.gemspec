@@ -26,7 +26,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'rails', '~> 5.1.2'
 
   s.add_development_dependency 'bundler', '~> 1.14'
-  s.add_development_dependency 'codecov'
   s.add_development_dependency 'engine_cart'
   s.add_development_dependency 'mocha'
   s.add_development_dependency 'poltergeist'
