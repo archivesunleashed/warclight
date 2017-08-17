@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class CatalogController < ApplicationController
-
   include Blacklight::Catalog
   include Warclight::Catalog
 
@@ -20,35 +19,11 @@ class CatalogController < ApplicationController
       rows: 10
     }
 
-    # solr path which will be added to solr base url before the other solr params.
-    #config.solr_path = 'select'
-
-    # items to show per page, each number in the array represent another option to choose from.
-    #config.per_page = [10,20,50,100]
-
-    ## Default parameters to send on single-document requests to Solr. These settings are the Blackligt defaults (see SearchHelper#solr_doc_params) or
-    ## parameters included in the Blacklight-jetty document requestHandler.
-    #
-    #config.default_document_solr_params = {
-    #  qt: 'document',
-    #  ## These are hard-coded in the blacklight 'document' requestHandler
-    #  # fl: '*',
-    #  # rows: 1,
-    #  # q: '{!term f=id v=$id}'
-    #}
-
     # solr field configuration for search results/index views
     config.index.title_field = 'title'
-    #config.index.display_type_field = 'level_ssm'
-    #config.index.thumbnail_field = 'thumbnail_path_ss'
-
-    # solr field configuration for document/show views
-    #config.show.title_field = 'title_display'
-    #config.show.display_type_field = 'format'
-    #config.show.thumbnail_field = 'thumbnail_path_ss'
 
     # solr fields that will be treated as facets by the blacklight application
-    #   The ordering of the field names is the order of the display
+    # The ordering of the field names is the order of the display
     #
     # Setting a limit will trigger Blacklight's 'more' facet values link.
     # * If left unset, then all facet values returned by solr will be displayed.
@@ -67,17 +42,20 @@ class CatalogController < ApplicationController
     # :show may be set to false if you don't want the facet to be drawn in the
     # facet bar
     #
-    # set :index_range to true if you want the facet pagination view to have facet prefix-based navigation
-    #  (useful when user clicks "more" on a large facet and wants to navigate alphabetically across a large set of results)
-    # :index_range can be an array or range of prefixes that will be used to create the navigation (note: It is case sensitive when searching values)
+    # set :index_range to true if you want the facet pagination view to have
+    # facet prefix-based navigation (useful when user clicks "more" on a large
+    # facet and wants to navigate alphabetically across a large set of results)
+    # :index_range can be an array or range of prefixes that will be used to
+    # create the navigation (note: It is case sensitive when searching values)
 
-    config.add_facet_field 'content_type_norm', label: "General Content Type", collapse: false
-    config.add_facet_field 'crawl_years', label: "Crawl Years", collapse: false
-    config.add_facet_field 'domain', label: "Domain"
-    config.add_facet_field 'links_domains', label: "Links Domains"
-    config.add_facet_field 'institution', label: "Institution"
-    config.add_facet_field 'collection_name', label: "Collection Name"
-    config.add_facet_field 'collection_number', label: "Collection Number"
+    config.add_facet_field 'content_type_norm', label: 'General Content Type', collapse: false
+    config.add_facet_field 'crawl_year', label: 'Crawl Year', collapse: false
+    config.add_facet_field 'public_suffix', label: 'Public Suffix', collapse: false
+    config.add_facet_field 'domain', label: 'Domain'
+    config.add_facet_field 'links_domains', label: 'Links Domains'
+    config.add_facet_field 'institution', label: 'Institution'
+    config.add_facet_field 'collection_name', label: 'Collection Name'
+    config.add_facet_field 'collection_number', label: 'Collection Number'
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -91,19 +69,23 @@ class CatalogController < ApplicationController
     config.add_index_field 'crawl_date', label: 'Crawl Date'
     config.add_index_field 'content_type', label: 'Content Type'
     config.add_index_field 'domain', label: 'Domain'
-    config.add_index_field 'links_domains', label: "This page links to"
-    config.add_index_field 'institution', label: "Institution"
-    config.add_index_field 'collection_name', label: "Collection Name"
-    config.add_index_field 'collection_number', label: "Collection Number"
+    config.add_index_field 'links_domains', label: 'This page links to'
+    config.add_index_field 'institution', label: 'Institution'
+    config.add_index_field 'collection_name', label: 'Collection Name'
+    config.add_index_field 'collection_number', label: 'Collection Number'
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
     config.add_show_field 'title', label: 'Title'
     config.add_show_field 'url', label: 'URL'
     config.add_show_field 'host', label: 'Host'
+    config.add_show_field 'crawl_date', label: 'Crawl Date'
+    config.add_show_field 'source_file', label: 'Source File'
+    config.add_show_field 'content_type', label: 'Content Type'
+    config.add_show_field 'server', label: 'Server'
     config.add_show_field 'content_type_served', label: 'Content Type Served'
     config.add_show_field 'content_length', label: 'Length'
-    config.add_show_field 'links_hosts', label: "Link Hosts"
+    config.add_show_field 'links_hosts', label: 'Link Hosts'
     config.add_show_field 'content', label: 'Content'
 
     # "fielded" search configuration. Used by pulldown among other places.
@@ -127,24 +109,14 @@ class CatalogController < ApplicationController
       field.include_in_simple_select = true
     end
 
-    config.add_search_field 'within_collection' do |field|
-      field.include_in_simple_select = false
-      field.solr_parameters = {
-        fq: '-level_sim:Collection'
-      }
-    end
-
     # Field-based searches. We have registered handlers in the Solr configuration
     # so we have Blacklight use the `qt` parameter to invoke them
-    #config.add_search_field 'keyword', label: 'Keyword' do |field|
-    #  field.qt = 'search' # default
-    #end
 
     # "sort results by" select (pulldown)
     # label in pulldown is followed by the name of the SOLR field to sort by and
     # whether the sort is ascending or descending (it must be asc or desc
     # except in the relevancy case).
-    #config.add_sort_field 'score desc, title_sort asc', label: 'relevance'
+    config.add_sort_field 'score desc', label: 'relevance'
 
     # If there are more than this many search results, no spelling ("did you
     # mean") suggestion is offered.
