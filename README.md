@@ -5,7 +5,7 @@
 [![Contribution Guidelines](http://img.shields.io/badge/CONTRIBUTING-Guidelines-blue.svg)](./CONTRIBUTING.md)
 [![LICENSE](https://img.shields.io/badge/license-Apache-blue.svg?style=flat-square)](./LICENSE.txt)
 
-A [Project Blacklight](http://projectblacklight.org/) based [Rails engine](http://guides.rubyonrails.org/engines.html) that supports the discovery of web archives.
+A [Project Blacklight](http://projectblacklight.org/) based [Rails engine](http://guides.rubyonrails.org/engines.html) that supports the discovery of web archives held in the WARC and ARC formats. It allows faceted full-text search, record view, and other advanced discovery options. 
 
 ## Requirements
 
@@ -32,7 +32,7 @@ $ gem install warclight
 
 ## Usage
 
-Warclight is designed to work with web archive data that is indexed via the UK Web Archive's [webarchive-discovery](https://github.com/ukwa/webarchive-discovery) project. Currently Warclight uses a fork of [webarchive-discovery](https://github.com/web-archive-group/webarchive-discovery/tree/addFields) that allows for three additional facets; `institution`, `collection_name`, and `collection_number`.
+Warclight is designed to work with web archive data that is indexed via the UK Web Archive's [webarchive-discovery](https://github.com/ukwa/webarchive-discovery) project. Warclight currently uses a fork of [webarchive-discovery](https://github.com/web-archive-group/webarchive-discovery/tree/addFields) that allows for three additional facets: `institution`, `collection_name`, and `collection_number`.
 
 ## Development
 
