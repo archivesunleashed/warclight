@@ -31,7 +31,7 @@ $ gem install warclight
 
 ## Usage
 
-Warclight is designed to work with web archive data that is indexed via the UK Web Archive's [webarchive-discovery](webarchive-discovery) project.
+Warclight is designed to work with web archive data that is indexed via the UK Web Archive's [webarchive-discovery](https://github.com/ukwa/webarchive-discovery) project.
 
 ## Development
 
