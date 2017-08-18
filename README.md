@@ -1,8 +1,9 @@
 # Warclight
 [![Build Status](https://travis-ci.org/archivesunleashed/warclight.svg?branch=master)](https://travis-ci.org/archivesunleashed/warclight)
+[![codecov](https://codecov.io/gh/archivesunleashed/warclight/branch/master/graph/badge.svg)](https://codecov.io/gh/archivesunleashed/warclight)
+[![Gem Version](https://badge.fury.io/rb/warclight.svg)](https://badge.fury.io/rb/warclight)
 [![Contribution Guidelines](http://img.shields.io/badge/CONTRIBUTING-Guidelines-blue.svg)](./CONTRIBUTING.md)
 [![LICENSE](https://img.shields.io/badge/license-Apache-blue.svg?style=flat-square)](./LICENSE.txt)
-[![codecov](https://codecov.io/gh/archivesunleashed/warclight/branch/master/graph/badge.svg)](https://codecov.io/gh/archivesunleashed/warclight)
 
 A [Project Blacklight](http://projectblacklight.org/) based [Rails engine](http://guides.rubyonrails.org/engines.html) that supports the discovery of web archives.
 
