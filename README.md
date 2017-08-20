@@ -30,6 +30,8 @@ Or install it yourself as:
 $ gem install warclight
 ```
 
+For further details, see our [Creating, installing, and running your Warclight application](https://github.com/archivesunleashed/warclight/wiki/Creating%2C-installing%2C-and-running-your-Warclight-application) documentation.
+
 ## Usage
 
 Warclight is designed to work with web archive data that is indexed via the UK Web Archive's [webarchive-discovery](https://github.com/ukwa/webarchive-discovery) project. Warclight currently uses a fork of [webarchive-discovery](https://github.com/web-archive-group/webarchive-discovery/tree/addFields) that allows for three additional facets: `institution`, `collection_name`, and `collection_number`.
