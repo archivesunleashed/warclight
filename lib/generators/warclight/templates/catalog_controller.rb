@@ -105,8 +105,24 @@ class CatalogController < ApplicationController
     # This one uses all the defaults set by the solr request handler. Which
     # solr request handler? The one set in config[:default_solr_parameters][:qt],
     # since we aren't specifying it otherwise.
-    config.add_search_field 'all_fields', label: 'All Fields' do |field|
+    config.add_search_field 'text', label: 'Text' do |field|
       field.include_in_simple_select = true
+    end
+
+    config.add_search_field 'title', label: 'Title' do |field|
+      field.qt = 'title_search'
+    end
+
+    config.add_search_field 'content', label: 'Content' do |field|
+      field.qt = 'content_search'
+    end
+
+    config.add_search_field 'url', label: 'URL' do |field|
+      field.qt = 'url_search'
+    end
+
+    config.add_search_field 'host', label: 'Host' do |field|
+      field.qt = 'host_search'
     end
 
     # Field-based searches. We have registered handlers in the Solr configuration
