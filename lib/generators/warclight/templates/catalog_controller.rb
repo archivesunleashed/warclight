@@ -66,31 +66,33 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display
     config.add_index_field 'title', label: 'Title'
-    config.add_index_field 'host', label: 'Host'
+    config.add_index_field 'host', label: 'Host', link_to_facet: true
     config.add_index_field 'crawl_date', label: 'Crawl Date'
-    config.add_index_field 'content_type_norm', label: 'General Content Type'
-    config.add_index_field 'content_language', label: 'Content Language'
-    config.add_index_field 'domain', label: 'Domain'
-    config.add_index_field 'institution', label: 'Institution'
-    config.add_index_field 'collection_name', label: 'Collection Name'
-    config.add_index_field 'collection_number', label: 'Collection Number'
-    config.add_index_field 'links_domains', label: 'This page links to'
+    config.add_index_field 'content_type_norm', label: 'General Content Type', link_to_facet: true
+    config.add_index_field 'content_language', label: 'Content Language', link_to_facet: true
+    config.add_index_field 'domain', label: 'Domain', link_to_facet: true
+    config.add_index_field 'institution', label: 'Institution', link_to_facet: true
+    config.add_index_field 'collection_name', label: 'Collection Name', link_to_facet: true
+    config.add_index_field 'collection_number', label: 'Collection Number', link_to_facet: true
+    config.add_index_field 'links_domains', label: 'This page links to', link_to_facet: true,
+                                            separator_options: { words_connector: '; ' }
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
     config.add_show_field 'title', label: 'Title'
     config.add_show_field 'url', label: 'URL'
-    config.add_show_field 'host', label: 'Host'
-    config.add_show_field 'institution', label: 'Institution'
-    config.add_show_field 'collection_name', label: 'Collection Name'
-    config.add_show_field 'collection_number', label: 'Collection Number'
+    config.add_show_field 'host', label: 'Host', link_to_facet: true
+    config.add_show_field 'institution', label: 'Institution', link_to_facet: true
+    config.add_show_field 'collection_name', label: 'Collection Name', link_to_facet: true
+    config.add_show_field 'collection_number', label: 'Collection Number', link_to_facet: true
     config.add_show_field 'crawl_date', label: 'Crawl Date'
     config.add_show_field 'source_file', label: 'Source File'
-    config.add_show_field 'content_type_norm', label: 'General Content Type'
-    config.add_show_field 'content_language', label: 'Content Language'
+    config.add_show_field 'content_type_norm', label: 'General Content Type', link_to_facet: true
+    config.add_show_field 'content_language', label: 'Content Language', link_to_facet: true
     config.add_show_field 'content_length', label: 'Length'
-    config.add_show_field 'links_hosts', label: 'Link Hosts'
-    config.add_show_field 'links_domains', label: 'This page links to'
+    config.add_show_field 'links_hosts', label: 'Link Hosts', link_to_facet: true
+    config.add_show_field 'links_domains', label: 'This page links to', link_to_facet: true,
+                                           separator_options: { words_connector: '; ' }
     config.add_show_field 'content', label: 'Content'
 
     # "fielded" search configuration. Used by pulldown among other places.
