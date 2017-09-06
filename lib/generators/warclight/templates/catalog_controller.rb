@@ -53,6 +53,7 @@ class CatalogController < ApplicationController
     config.add_facet_field 'public_suffix', label: 'Public Suffix', collapse: false
     config.add_facet_field 'domain', label: 'Domain'
     config.add_facet_field 'links_domains', label: 'Links Domains'
+    config.add_facet_field 'content_language', label: 'Content Language'
     config.add_facet_field 'institution', label: 'Institution'
     config.add_facet_field 'collection_name', label: 'Collection Name'
     config.add_facet_field 'collection_number', label: 'Collection Number'
