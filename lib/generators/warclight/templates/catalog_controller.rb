@@ -68,12 +68,13 @@ class CatalogController < ApplicationController
     config.add_index_field 'title', label: 'Title'
     config.add_index_field 'host', label: 'Host'
     config.add_index_field 'crawl_date', label: 'Crawl Date'
-    config.add_index_field 'content_type', label: 'Content Type'
+    config.add_index_field 'content_type_norm', label: 'General Content Type'
+    config.add_index_field 'content_language', label: 'Content Language'
     config.add_index_field 'domain', label: 'Domain'
-    config.add_index_field 'links_domains', label: 'This page links to'
     config.add_index_field 'institution', label: 'Institution'
     config.add_index_field 'collection_name', label: 'Collection Name'
     config.add_index_field 'collection_number', label: 'Collection Number'
+    config.add_index_field 'links_domains', label: 'This page links to'
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
