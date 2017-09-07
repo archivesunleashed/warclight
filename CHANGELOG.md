@@ -1,5 +1,16 @@
 # Change Log
 
+## [v0.2.0](https://github.com/archivesunleashed/warclight/tree/v0.2.0) (2017-09-07)
+[Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.1.1...v0.2.0)
+
+**Implemented enhancements:**
+
+- 'url' field value should be presented as a link [\#20](https://github.com/archivesunleashed/warclight/issues/20)
+
+**Closed issues:**
+
+- Additional fields in the standard search [\#23](https://github.com/archivesunleashed/warclight/issues/23)
+
 ## [v0.1.1](https://github.com/archivesunleashed/warclight/tree/v0.1.1) (2017-08-20)
 [Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.1.0...v0.1.1)
 
