@@ -50,10 +50,11 @@ class CatalogController < ApplicationController
 
     config.add_facet_field 'content_type_norm', label: 'General Content Type', collapse: false
     config.add_facet_field 'crawl_year', label: 'Crawl Year', collapse: false
-    config.add_facet_field 'public_suffix', label: 'Public Suffix', collapse: false
-    config.add_facet_field 'domain', label: 'Domain'
-    config.add_facet_field 'links_domains', label: 'Links Domains'
-    config.add_facet_field 'content_language', label: 'Content Language'
+    config.add_facet_field 'public_suffix', label: 'Public Suffix', collapse: false, limit: true
+    config.add_facet_field 'domain', label: 'Domain', limit: true
+    config.add_facet_field 'links_domains', label: 'Links Domains', limit: true
+    config.add_facet_field 'content_language', label: 'Content Language', limit: true
+    config.add_facet_field 'resourcename', label: 'Filename', limit: true
     config.add_facet_field 'institution', label: 'Institution'
     config.add_facet_field 'collection_name', label: 'Collection Name'
     config.add_facet_field 'collection_number', label: 'Collection Number'
