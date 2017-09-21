@@ -181,6 +181,7 @@
         <copyField source="wct_description" dest="text"/>
         <copyField source="url" dest="text"/>
         <copyField source="content" dest="text"/>
+        <copyField source="resourcename" dest="resourcename_s" indexed="false" stored="false" docValues="true"/>
 
   <types>
         <fieldType name="string" class="solr.StrField" sortMissingLast="true" />
