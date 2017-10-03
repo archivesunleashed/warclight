@@ -23,6 +23,9 @@
         <field name="_root_" type="string" indexed="true" docValues="true" />
         <field name="_text_" type="text_general" indexed="true" stored="false" multiValued="true"/>
 
+        <!--Not defined in SolrFields. Schema only defintion -->
+        <field name="index_time" type="date" indexed="true" stored="false" docValues="true" default="NOW" /> 
+
         <!-- BL UKWA: additional -->
         <field name="access_terms" type="string" indexed="true" docValues="true" multiValued="true"/>
         <field name="author" type="string" indexed="true" docValues="true"/>
@@ -120,10 +123,11 @@
         <field name="warc_ip" type="string" indexed="true" docValues="true" multiValued="false"/>
         <!--:BL UKWA -->
 
-        <!--:User Supplied Values - Web Archives for Historical Research -->
+        <!-- User supplied Archive-It fields: -->
         <field name="institution" type="string" indexed="true" multiValued="false" docValues="true"/>
         <field name="collection_name" type="string" indexed="true" multiValued="false" docValues="true"/>
         <field name="collection_number" type="string" indexed="true" multiValued="false" docValues="true"/>
+        <!--:User supplied Archive-It fields -->
 
         <dynamicField name="*_i"  type="int"    indexed="true"  stored="true"/>
         <dynamicField name="*_is" type="ints"    indexed="true"  stored="true"/>
@@ -156,6 +160,10 @@
         <dynamicField name="ignored_*" type="ignored" multiValued="true"/>
         <dynamicField name="attr_*" type="text_general" indexed="true" stored="true" multiValued="true"/>
         <dynamicField name="random_*" type="random" />
+
+        <!--:IMAGE EXIF-->
+        <field name="exif_location" type="location" indexed="true" stored="true" multiValued="false"/>
+        <field name="exif_version" type="string" indexed="true" stored="true" multiValued="false"/>
 
         <!-- BL UKWA: additional -->
         <dynamicField name="ssdeep_hash_bs_*" type="string" indexed="true" stored="true" multiValued="false"/>
