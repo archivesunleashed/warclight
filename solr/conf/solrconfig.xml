@@ -51,9 +51,6 @@
       <maxTime>${solr.autoCommit.maxTime:15000}</maxTime>
       <openSearcher>false</openSearcher>
     </autoCommit>
-    <autoSoftCommit>
-      <maxTime>${solr.autoSoftCommit.maxTime:-1}</maxTime>
-    </autoSoftCommit>
   </updateHandler>
 
   <query>
