@@ -73,6 +73,7 @@
         <field name="last_modified" type="tdate" indexed="true" stored="true" docValues="true"/>
         <field name="last_modified_year" type="string" indexed="true" docValues="true"/>
         <field name="license_url" type="string" indexed="true" docValues="true" multiValued="true"/>
+        <field name="links_images" type="string" indexed="true" docValues="true" multiValued="true"/>
         <field name="links_domains" type="string" indexed="true" docValues="true" multiValued="true"/>
         <field name="links_hosts" type="string" indexed="true" docValues="true" multiValued="true"/>
         <field name="links_hosts_surts" type="string" indexed="true" docValues="true" multiValued="true"/>
@@ -94,6 +95,7 @@
         <field name="sentiment_score" type="float" indexed="true" stored="true" multiValued="false"/>
         <field name="sentiment" type="string" indexed="true" docValues="true" multiValued="false"/>
         <field name="server" type="string" indexed="true" docValues="true" multiValued="true"/>
+        <field name="source_file_path" type="string" indexed="true" docValues="true" />
         <field name="source_file_offset" type="tlong" indexed="true" stored="true" />
         <field name="source_file" type="string" indexed="true" docValues="true" />
         <field name="status_code" type="int" indexed="true" stored="true" docValues="true" />
@@ -114,6 +116,8 @@
         <field name="wct_target_id" type="string" indexed="true" docValues="true" multiValued="false"/>
         <field name="wct_title" type="string" indexed="true" docValues="true"/>
         <field name="xml_root_ns" type="string" indexed="true" docValues="true" multiValued="false"/>
+        <field name="warc_key_id" type="string" indexed="true" docValues="true" multiValued="false"/>
+        <field name="warc_ip" type="string" indexed="true" docValues="true" multiValued="false"/>
         <!--:BL UKWA -->
 
         <!--:User Supplied Values - Web Archives for Historical Research -->
