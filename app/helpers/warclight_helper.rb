@@ -17,4 +17,8 @@ module WarclightHelper
       end
     end, '')
   end
+
+  def return_five(options = {})
+    options[:value][0, 5].join('; ') + '...'
+  end
 end
