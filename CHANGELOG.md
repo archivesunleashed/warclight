@@ -1,5 +1,22 @@
 # Change Log
 
+## [v0.3.0](https://github.com/archivesunleashed/warclight/tree/v0.3.0) (2017-10-11)
+[Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.2.0...v0.3.0)
+
+**Implemented enhancements:**
+
+- Document titles occasionally seem off [\#18](https://github.com/archivesunleashed/warclight/issues/18)
+- Truncate fields on search results display? [\#9](https://github.com/archivesunleashed/warclight/issues/9)
+
+**Closed issues:**
+
+- Change resourcename type from text\_general to string [\#24](https://github.com/archivesunleashed/warclight/issues/24)
+
+**Merged pull requests:**
+
+- Add helper method to truncate arrays; Resolves \#9 [\#28](https://github.com/archivesunleashed/warclight/pull/28) ([ruebot](https://github.com/ruebot))
+- Add live http status code check for linking out urls; Resolves \#26. [\#27](https://github.com/archivesunleashed/warclight/pull/27) ([ruebot](https://github.com/ruebot))
+
 ## [v0.2.0](https://github.com/archivesunleashed/warclight/tree/v0.2.0) (2017-09-07)
 [Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.1.1...v0.2.0)
 
