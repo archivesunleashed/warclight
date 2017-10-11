@@ -80,7 +80,7 @@ class CatalogController < ApplicationController
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
-    config.add_show_field 'url', label: 'URL (live web)', helper_method: :link_to_live_web
+    config.add_show_field 'url', label: 'URL', helper_method: :url_to_link
     config.add_show_field 'resourcename', label: 'Filename', link_to_facet: true
     config.add_show_field 'host', label: 'Host', link_to_facet: true
     config.add_show_field 'institution', label: 'Institution', link_to_facet: true
