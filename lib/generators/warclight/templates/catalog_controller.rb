@@ -75,8 +75,7 @@ class CatalogController < ApplicationController
     config.add_index_field 'institution', label: 'Institution', link_to_facet: true
     config.add_index_field 'collection_name', label: 'Collection Name', link_to_facet: true
     config.add_index_field 'collection_number', label: 'Collection Number', link_to_facet: true
-    config.add_index_field 'links_domains', label: 'This page links to', link_to_facet: true,
-                                            separator_options: { words_connector: '; ' }
+    config.add_index_field 'links_domains', label: 'This page links to', helper_method: :return_five
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display

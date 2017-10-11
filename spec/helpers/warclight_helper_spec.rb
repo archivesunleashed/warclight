@@ -20,4 +20,12 @@ RSpec.describe WarclightHelper, type: :helper do
       end
     end
   end
+
+  describe '#return_five' do
+    context 'when a field has more than 5 items' do
+      it 'prints the first 5 items in the array, seperated by ";", and ends with "..."' do
+        expect(helper.return_five(value: %w[a b c d e f])).to eq('a; b; c; d; e...')
+      end
+    end
+  end
 end
