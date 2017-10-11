@@ -20,7 +20,7 @@ class CatalogController < ApplicationController
     }
 
     # solr field configuration for search results/index views
-    config.index.title_field = ['title', 'resourcename_s']
+    config.index.title_field = ['title', 'resourcename']
 
     # solr fields that will be treated as facets by the blacklight application
     # The ordering of the field names is the order of the display
@@ -54,7 +54,7 @@ class CatalogController < ApplicationController
     config.add_facet_field 'domain', label: 'Domain', limit: true
     config.add_facet_field 'links_domains', label: 'Links Domains', limit: true
     config.add_facet_field 'content_language', label: 'Content Language', limit: true
-    config.add_facet_field 'resourcename_s', label: 'Filename', limit: true
+    config.add_facet_field 'resourcename_s', label: 'Resource Name', limit: true
     config.add_facet_field 'institution', label: 'Institution'
     config.add_facet_field 'collection_name', label: 'Collection Name'
     config.add_facet_field 'collection_number', label: 'Collection Number'
@@ -80,7 +80,7 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
     config.add_show_field 'url', label: 'URL', helper_method: :url_to_link
-    config.add_show_field 'resourcename_s', label: 'Filename', link_to_facet: true
+    config.add_show_field 'resourcename', label: 'Resource Name', link_to_facet: true
     config.add_show_field 'host', label: 'Host', link_to_facet: true
     config.add_show_field 'institution', label: 'Institution', link_to_facet: true
     config.add_show_field 'collection_name', label: 'Collection Name', link_to_facet: true
