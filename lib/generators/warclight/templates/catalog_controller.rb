@@ -56,8 +56,8 @@ class CatalogController < ApplicationController
     config.add_facet_field 'content_language', label: 'Content Language', limit: true
     config.add_facet_field 'resourcename_s', label: 'Resource Name', limit: true
     config.add_facet_field 'institution', label: 'Institution'
-    config.add_facet_field 'collection_name', label: 'Collection Name'
-    config.add_facet_field 'collection_number', label: 'Collection Number'
+    config.add_facet_field 'collection', label: 'Collection'
+    config.add_facet_field 'collection_id', label: 'Collection Id'
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -73,8 +73,8 @@ class CatalogController < ApplicationController
     config.add_index_field 'content_language', label: 'Content Language', link_to_facet: true
     config.add_index_field 'domain', label: 'Domain', link_to_facet: true
     config.add_index_field 'institution', label: 'Institution', link_to_facet: true
-    config.add_index_field 'collection_name', label: 'Collection Name', link_to_facet: true
-    config.add_index_field 'collection_number', label: 'Collection Number', link_to_facet: true
+    config.add_index_field 'collection', label: 'Collection', link_to_facet: true
+    config.add_index_field 'collection_id', label: 'Collection Id', link_to_facet: true
     config.add_index_field 'links_domains', label: 'This page links to', helper_method: :return_five
 
     # solr fields to be displayed in the show (single result) view
@@ -83,8 +83,8 @@ class CatalogController < ApplicationController
     config.add_show_field 'resourcename', label: 'Resource Name', link_to_facet: true
     config.add_show_field 'host', label: 'Host', link_to_facet: true
     config.add_show_field 'institution', label: 'Institution', link_to_facet: true
-    config.add_show_field 'collection_name', label: 'Collection Name', link_to_facet: true
-    config.add_show_field 'collection_number', label: 'Collection Number', link_to_facet: true
+    config.add_show_field 'collection', label: 'Collection', link_to_facet: true
+    config.add_show_field 'collection_id', label: 'Collection Id', link_to_facet: true
     config.add_show_field 'crawl_date', label: 'Crawl Date'
     config.add_show_field 'source_file', label: 'Source File'
     config.add_show_field 'content_type_norm', label: 'General Content Type', link_to_facet: true
