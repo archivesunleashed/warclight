@@ -48,16 +48,16 @@ class CatalogController < ApplicationController
     # :index_range can be an array or range of prefixes that will be used to
     # create the navigation (note: It is case sensitive when searching values)
 
-    config.add_facet_field 'content_type_norm', label: 'General Content Type', collapse: false
-    config.add_facet_field 'crawl_year', label: 'Crawl Year', collapse: false
+    config.add_facet_field 'content_type_norm', label: 'General Content Type', collapse: false, limit: true
+    config.add_facet_field 'crawl_year', label: 'Crawl Year', collapse: false, limit: true
     config.add_facet_field 'public_suffix', label: 'Public Suffix', collapse: false, limit: true
     config.add_facet_field 'domain', label: 'Domain', limit: true
     config.add_facet_field 'links_domains', label: 'Links Domains', limit: true
     config.add_facet_field 'content_language', label: 'Content Language', limit: true
     config.add_facet_field 'resourcename_s', label: 'Resource Name', limit: true
-    config.add_facet_field 'institution', label: 'Institution'
-    config.add_facet_field 'collection_name', label: 'Collection Name'
-    config.add_facet_field 'collection_number', label: 'Collection Number'
+    config.add_facet_field 'institution', label: 'Institution', limit: true
+    config.add_facet_field 'collection_name', label: 'Collection Name', limit: true
+    config.add_facet_field 'collection_number', label: 'Collection Number', limit: true
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
