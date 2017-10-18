@@ -86,7 +86,7 @@ class CatalogController < ApplicationController
     config.add_show_field 'collection_name', label: 'Collection Name', link_to_facet: true
     config.add_show_field 'collection_number', label: 'Collection Number', link_to_facet: true
     config.add_show_field 'crawl_date', label: 'Crawl Date'
-    config.add_show_field 'source_file', label: 'Source File'
+    config.add_show_field 'source_file', label: 'Source File', link_to_facet: true
     config.add_show_field 'content_type_norm', label: 'General Content Type', link_to_facet: true
     config.add_show_field 'content_language', label: 'Content Language', link_to_facet: true
     config.add_show_field 'content_length', label: 'Length'
