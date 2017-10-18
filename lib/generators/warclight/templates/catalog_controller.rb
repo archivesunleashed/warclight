@@ -49,7 +49,7 @@ class CatalogController < ApplicationController
     # create the navigation (note: It is case sensitive when searching values)
 
     config.add_facet_field 'content_type_norm', label: 'General Content Type', collapse: false, limit: true
-    config.add_facet_field 'crawl_year', label: 'Crawl Year', collapse: false, limit: true
+    config.add_facet_field 'crawl_year', label: 'Crawl Year', collapse: false, limit: true, sort: 'index'
     config.add_facet_field 'public_suffix', label: 'Public Suffix', collapse: false, limit: true
     config.add_facet_field 'domain', label: 'Domain', limit: true
     config.add_facet_field 'links_domains', label: 'Links Domains', limit: true
