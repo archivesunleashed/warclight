@@ -1,5 +1,23 @@
 # Change Log
 
+## [v0.4.0](https://github.com/archivesunleashed/warclight/tree/v0.4.0) (2017-10-18)
+[Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.3.0...v0.4.0)
+
+**Implemented enhancements:**
+
+- Source File value should link to a search [\#34](https://github.com/archivesunleashed/warclight/issues/34)
+- Wayback/replay links [\#19](https://github.com/archivesunleashed/warclight/issues/19)
+
+**Closed issues:**
+
+- Sort crawl\_year facet by index [\#31](https://github.com/archivesunleashed/warclight/issues/31)
+- Boosting text is silly [\#30](https://github.com/archivesunleashed/warclight/issues/30)
+- Your Gemfile lists the gem... [\#5](https://github.com/archivesunleashed/warclight/issues/5)
+
+**Merged pull requests:**
+
+- Add Replay link; Resolves \#19 [\#35](https://github.com/archivesunleashed/warclight/pull/35) ([ruebot](https://github.com/ruebot))
+
 ## [v0.3.0](https://github.com/archivesunleashed/warclight/tree/v0.3.0) (2017-10-11)
 [Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.2.0...v0.3.0)
 
