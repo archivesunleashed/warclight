@@ -17,6 +17,7 @@ Metrics/LineLength:
   Max: 120
   Exclude:
     - 'Gemfile'
+    - 'spec/models/concerns/warclight/solr_document_spec.rb'
 
 Metrics/ModuleLength:
   Max: 120
@@ -34,12 +35,17 @@ Metrics/BlockLength:
     - 'spec/**/*'
     - 'lib/warclight/custom_document.rb'
 
+Metrics/AbcSize:
+  Exclude:
+    - 'app/models/concerns/warclight/solr_document.rb' #Come back to this later
+
 Performance/RegexpMatch:
   Enabled: false
 
 Rails/OutputSafety:
   Exclude:
     - 'app/controllers/concerns/warclight/field_config_helpers.rb' # html_safe needs to be called to mimic BL JOIN behavior
+    - 'app/models/concerns/warclight/solr_document.rb'
 
 RSpec/ExampleLength:
   Enabled: false
@@ -49,6 +55,10 @@ RSpec/MultipleExpectations:
 
 RSpec/NestedGroups:
   Max: 4
+
+Rails/TimeZone:
+  Exclude:
+    - 'app/models/concerns/warclight/solr_document.rb' #Come back to this later
 
 Style/Documentation:
   Exclude:
