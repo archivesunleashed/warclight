@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.5.0](https://github.com/archivesunleashed/warclight/tree/v0.5.0) (2017-10-19)
+[Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.4.0...v0.5.0)
+
+**Merged pull requests:**
+
+- Align with https://github.com/ukwa/webarchive-discovery/pull/129 [\#29](https://github.com/archivesunleashed/warclight/pull/29) ([ruebot](https://github.com/ruebot))
+
 ## [v0.4.0](https://github.com/archivesunleashed/warclight/tree/v0.4.0) (2017-10-18)
 [Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.3.0...v0.4.0)
 
