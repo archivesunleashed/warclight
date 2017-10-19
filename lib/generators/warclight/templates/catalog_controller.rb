@@ -48,8 +48,8 @@ class CatalogController < ApplicationController
     # :index_range can be an array or range of prefixes that will be used to
     # create the navigation (note: It is case sensitive when searching values)
 
-    config.add_facet_field 'content_type_norm', label: 'General Content Type', collapse: false
-    config.add_facet_field 'crawl_year', label: 'Crawl Year', collapse: false
+    config.add_facet_field 'content_type_norm', label: 'General Content Type', collapse: false, limit: true
+    config.add_facet_field 'crawl_year', label: 'Crawl Year', collapse: false, limit: true, sort: 'index'
     config.add_facet_field 'public_suffix', label: 'Public Suffix', collapse: false, limit: true
     config.add_facet_field 'domain', label: 'Domain', limit: true
     config.add_facet_field 'links_domains', label: 'Links Domains', limit: true
@@ -80,13 +80,14 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
     config.add_show_field 'url', label: 'URL', helper_method: :url_to_link
+    config.add_show_field 'replay_url', label: 'Replay URL', accessor: :replay_link
     config.add_show_field 'resourcename', label: 'Resource Name', link_to_facet: true
     config.add_show_field 'host', label: 'Host', link_to_facet: true
     config.add_show_field 'institution', label: 'Institution', link_to_facet: true
     config.add_show_field 'collection', label: 'Collection', link_to_facet: true
     config.add_show_field 'collection_id', label: 'Collection Id', link_to_facet: true
     config.add_show_field 'crawl_date', label: 'Crawl Date'
-    config.add_show_field 'source_file', label: 'Source File'
+    config.add_show_field 'source_file', label: 'Source File', link_to_facet: true
     config.add_show_field 'content_type_norm', label: 'General Content Type', link_to_facet: true
     config.add_show_field 'content_language', label: 'Content Language', link_to_facet: true
     config.add_show_field 'content_length', label: 'Length'
