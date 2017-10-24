@@ -19,6 +19,10 @@ module WarclightHelper
   end
 
   def return_five(options = {})
-    options[:value][0, 5].join('; ') + '...'
+    if options[:value].length > 5
+      options[:value][0, 5].join('; ') + '...'
+    else
+      options[:value].join('; ')
+    end
   end
 end

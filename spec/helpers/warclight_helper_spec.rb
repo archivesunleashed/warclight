@@ -27,5 +27,10 @@ RSpec.describe WarclightHelper, type: :helper do
         expect(helper.return_five(value: %w[a b c d e f])).to eq('a; b; c; d; e...')
       end
     end
+    context 'when a field has less than 5 items' do
+      it 'prints all items in the array, seperated by ";"' do
+        expect(helper.return_five(value: %w[a b])).to eq('a; b')
+      end
+    end
   end
 end
