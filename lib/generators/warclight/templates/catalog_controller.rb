@@ -54,7 +54,7 @@ class CatalogController < ApplicationController
     config.add_facet_field 'domain', label: 'Domain', limit: true
     config.add_facet_field 'links_domains', label: 'Links Domains', limit: true
     config.add_facet_field 'content_language', label: 'Content Language', limit: true
-    config.add_facet_field 'resourcename_s', label: 'Resource Name', limit: true
+    config.add_facet_field 'resourcename_facet', label: 'Resource Name', limit: true
     config.add_facet_field 'institution', label: 'Institution'
     config.add_facet_field 'collection', label: 'Collection'
     config.add_facet_field 'collection_id', label: 'Collection Id'
