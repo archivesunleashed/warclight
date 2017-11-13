@@ -67,3 +67,7 @@ Style/Documentation:
 
 Bundler/DuplicatedGem:
   Enabled: false
+
+Lint/UselessAssignment:
+  Exclude:
+    - 'app/models/concerns/warclight/solr_document.rb' #Come back to this later
