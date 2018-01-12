@@ -93,6 +93,7 @@
         <field name="publication_year" type="string" indexed="true" docValues="true" multiValued="false"/>
         <field name="public_suffix" type="string" indexed="true" docValues="true" multiValued="false"/>
         <field name="record_type" type="string" indexed="true" stored="true" multiValued="false" docValues="true"/>
+        <field name="redirect_to_norm" type="string" indexed="true" stored="false" docValues="true" multiValued="false"/>
         <field name="referrer_url" type="string" indexed="true" stored="true" multiValued="false" docValues="true"/>
         <field name="resourcename" type="text_general" indexed="true" stored="true"/>
         <field name="resourcename_facet" type="string" indexed="false" stored="false" docValues="true" multiValued="false"/>
