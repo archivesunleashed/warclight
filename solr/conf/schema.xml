@@ -76,7 +76,7 @@
         <field name="last_modified" type="tdate" indexed="true" stored="true" docValues="true"/>
         <field name="last_modified_year" type="string" indexed="true" docValues="true"/>
         <field name="license_url" type="string" indexed="true" docValues="true" multiValued="true"/>
-        <field name="links_images" type="string" indexed="true" docValues="true" multiValued="true"/>
+        <field name="links_images" type="text_general" indexed="true" stored="true" multiValued="true"/>
         <field name="links_domains" type="string" indexed="true" docValues="true" multiValued="true"/>
         <field name="links_hosts" type="string" indexed="true" docValues="true" multiValued="true"/>
         <field name="links_hosts_surts" type="string" indexed="true" docValues="true" multiValued="true"/>
@@ -85,7 +85,7 @@
         <field name="links" type="string" indexed="true" docValues="true" multiValued="true"/>
         <field name="locations" type="location" indexed="true" stored="true" multiValued="true"/>
         <field name="parse_error" type="string" indexed="true" docValues="true" multiValued="true"/>
-        <field name="pdf_pdfa_errors" type="string" indexed="true" docValues="true" multiValued="true"/>
+        <field name="pdf_pdfa_errors" type="text_general" indexed="false" stored="true" multiValued="true"/>
         <field name="pdf_pdfa_is_valid" type="string" indexed="true" docValues="true" multiValued="false"/>
         <field name="postcode_district" type="string" indexed="true" docValues="true" multiValued="true"/>
         <field name="postcode" type="string" indexed="true" docValues="true" multiValued="true"/>
