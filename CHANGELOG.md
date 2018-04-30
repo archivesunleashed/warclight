@@ -1,5 +1,24 @@
 # Change Log
 
+## [v0.6.0](https://github.com/archivesunleashed/warclight/tree/v0.6.0) (2018-04-30)
+[Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.5.0...v0.6.0)
+
+**Implemented enhancements:**
+
+- return\_five helper method needs a conditional [\#38](https://github.com/archivesunleashed/warclight/issues/38)
+- Advanced Search [\#22](https://github.com/archivesunleashed/warclight/issues/22)
+- Citations should be in scholarly format [\#11](https://github.com/archivesunleashed/warclight/issues/11)
+
+**Fixed bugs:**
+
+- Handle no results for replay\_link query [\#41](https://github.com/archivesunleashed/warclight/issues/41)
+- return\\_five helper method needs a conditional [\#38](https://github.com/archivesunleashed/warclight/issues/38)
+
+**Closed issues:**
+
+- Does not install with template file [\#42](https://github.com/archivesunleashed/warclight/issues/42)
+- Create helper method for thumbnail URL [\#40](https://github.com/archivesunleashed/warclight/issues/40)
+
 ## [v0.5.0](https://github.com/archivesunleashed/warclight/tree/v0.5.0) (2017-10-19)
 [Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.4.0...v0.5.0)
 
