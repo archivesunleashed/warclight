@@ -22,11 +22,10 @@ Gem::Specification.new do |s|
   s.require_paths   = ['lib']
 
   s.add_dependency 'blacklight'
-  s.add_dependency 'blacklight_range_limit'
-  s.add_dependency 'rails', '~> 5.2.0'
+  s.add_dependency 'rails', '~> 5.0'
 
   s.add_development_dependency 'bundler', '~> 1.14'
-  s.add_development_dependency 'engine_cart'
+  s.add_development_dependency 'engine_cart', '~> 1.2.0'
   s.add_development_dependency 'mocha'
   s.add_development_dependency 'poltergeist'
   s.add_development_dependency 'rake', '~> 12.0'

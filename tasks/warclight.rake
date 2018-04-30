@@ -57,5 +57,6 @@ namespace :warclight do
     # rubocop:disable Metrics/LineLength
     system('curl -o ".internal_test_app/tmp/warc-indexer.jar" "http://alpha.library.yorku.ca/warc-indexer-3.0.0-SNAPSHOT-jar-with-dependencies.jar"')
     system('java -Djava.io.tmpdir=.internal_test_app/tmp -jar .internal_test_app/tmp/warc-indexer.jar -c .internal_test_app/solr/warclight_warc-indexer.conf -i "York University Libraries" -n "Test Collection" -u "12345" -s http://localhost:8983/solr/blacklight-core spec/fixtures/warcs/*.gz')
+    system('curl "http://localhost:8983/solr/blacklight-core/update?commit=true&openSearcher=true"')
   end
 end

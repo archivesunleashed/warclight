@@ -1,2 +1,0 @@
-// Vendor Scripts
-//= require responsiveTruncator

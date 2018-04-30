@@ -10,7 +10,7 @@ A [Project Blacklight](http://projectblacklight.org/) based [Rails engine](http:
 ## Requirements
 
 * [Ruby](https://www.ruby-lang.org/en/) 2.2 or later
-* [Rails](http://rubyonrails.org) 5.1.2 or later
+* [Rails](http://rubyonrails.org) 5.0.0 or later
 
 ## Installation
 
