@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'blacklight'
   s.add_dependency 'blacklight_range_limit'
-  s.add_dependency 'rails', '~> 5.1.2'
+  s.add_dependency 'rails', '~> 5.2.0'
 
   s.add_development_dependency 'bundler', '~> 1.14'
   s.add_development_dependency 'engine_cart'
