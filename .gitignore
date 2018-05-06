@@ -15,5 +15,6 @@ pkg/
 rspec_status
 
 .internal_test_app
+.internal_test_gem
 
 /node_modules/
