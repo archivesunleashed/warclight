@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.6.1](https://github.com/archivesunleashed/warclight/tree/v0.6.1) (2018-05-07)
+[Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.6.0...v0.6.1)
+
+**Closed issues:**
+
+- Usability of Facet Links [\#43](https://github.com/archivesunleashed/warclight/issues/43)
+
 ## [v0.6.0](https://github.com/archivesunleashed/warclight/tree/v0.6.0) (2018-04-30)
 [Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.5.0...v0.6.0)
 
