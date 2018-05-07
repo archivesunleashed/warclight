@@ -96,7 +96,7 @@
         <field name="redirect_to_norm" type="string" indexed="true" stored="false" docValues="true" multiValued="false"/>
         <field name="referrer_url" type="string" indexed="true" stored="true" multiValued="false" docValues="true"/>
         <field name="resourcename" type="text_general" indexed="true" stored="true"/>
-        <field name="resourcename_facet" type="string" indexed="false" stored="false" docValues="true" multiValued="false"/>
+        <field name="resourcename_facet" type="string" indexed="true" multiValued="false" docValues="true"/>
         <field name="sentiment_score" type="float" indexed="true" stored="true" multiValued="false"/>
         <field name="sentiment" type="string" indexed="true" docValues="true" multiValued="false"/>
         <field name="server" type="string" indexed="true" docValues="true" multiValued="true"/>
