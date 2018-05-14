@@ -7,11 +7,11 @@ RSpec.describe Warclight::SolrDocument do
 
   describe '#replay_link' do
     let(:document) do
-      SolrDocument.new(wayback_date: '20150113163601', url: 'http://www.library.yorku.ca/cms/steacie/about-the-library/hackfest/')
+      SolrDocument.new(wayback_date: '20150113163558', url: 'http://www.library.yorku.ca/robots.txt')
     end
 
     it 'writes a replay url based on memento time travel response' do
-      expect(document.replay_link).to eq '<a href="https://digital.library.yorku.ca/wayback/20150113163601/http://www.library.yorku.ca/cms/steacie/about-the-library/hackfest/" target="_blank">https://digital.library.yorku.ca/wayback/20150113163601/http://www.library.yorku.ca/cms/steacie/about-the-library/hackfest/</a> 🔗'
+      expect(document.replay_link).to eq '<a href="https://digital.library.yorku.ca/wayback/20150113163558/http://www.library.yorku.ca/robots.txt" target="_blank">https://digital.library.yorku.ca/wayback/20150113163558/http://www.library.yorku.ca/robots.txt</a> 🔗'
     end
 
     context 'when time_travel_response.empty?' do
