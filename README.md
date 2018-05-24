@@ -5,7 +5,7 @@
 [![Contribution Guidelines](http://img.shields.io/badge/CONTRIBUTING-Guidelines-blue.svg)](./CONTRIBUTING.md)
 [![LICENSE](https://img.shields.io/badge/license-Apache-blue.svg?style=flat-square)](./LICENSE.txt)
 
-A [Project Blacklight](http://projectblacklight.org/) based [Rails engine](http://guides.rubyonrails.org/engines.html) that supports the discovery of web archives held in the WARC and ARC formats. It allows faceted full-text search, record view, and other advanced discovery options. 
+A [Project Blacklight](http://projectblacklight.org/) based [Rails engine](http://guides.rubyonrails.org/engines.html) that supports the discovery of web archives held in the WARC and ARC formats. It allows faceted full-text search, record view, and other advanced discovery options.
 
 ## Requirements
 
@@ -77,6 +77,8 @@ The gem is available as open source under the terms of the [Apache License, Vers
 
 ## Acknowledgments
 
-This work is primarily supported by the [Andrew W. Mellon Foundation](https://uwaterloo.ca/arts/news/multidisciplinary-project-will-help-historians-unlock). Any opinions, findings, and conclusions or recommendations expressed are those of the researchers and do not necessarily reflect the views of the sponsors.
+This work is primarily supported by the [Andrew W. Mellon Foundation](https://mellon.org/). Other financial and in-kind support comes from the [Social Sciences and Humanities Research Council](http://www.sshrc-crsh.gc.ca/), [Compute Canada](https://www.computecanada.ca/), the [Ontario Ministry of Research, Innovation, and Science](https://www.ontario.ca/page/ministry-research-innovation-and-science), [York University Libraries](https://www.library.yorku.ca/web/), [Start Smart Labs](http://www.startsmartlabs.com/), and the [Faculty of Arts](https://uwaterloo.ca/arts/) and [David R. Cheriton School of Computer Science](https://cs.uwaterloo.ca/) at the [University of Waterloo](https://uwaterloo.ca/).
 
-This project drew inspiration from the [Arclight](https://github.com/sul-dlss/arclight), and would like to thank those creators and contributors.
+Any opinions, findings, and conclusions or recommendations expressed are those of the researchers and do not necessarily reflect the views of the sponsors.
+
+This project drew inspiration from the [Arclight](https://github.com/sul-dlss/arclight) and [UKWA's Shine](https://github.com/ukwa/shine/), and would like to thank those creators and contributors.
