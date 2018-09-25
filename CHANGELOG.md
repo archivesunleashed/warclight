@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.6.2](https://github.com/archivesunleashed/warclight/tree/v0.6.2) (2018-09-25)
+[Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.6.1...v0.6.2)
+
+**Closed issues:**
+
+- Update conf to handle large links\_hosts [\#44](https://github.com/archivesunleashed/warclight/issues/44)
+
 ## [v0.6.1](https://github.com/archivesunleashed/warclight/tree/v0.6.1) (2018-05-07)
 [Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.6.0...v0.6.1)
 
