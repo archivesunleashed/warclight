@@ -1,5 +1,8 @@
 # Change Log
 
+## [v0.6.3](https://github.com/archivesunleashed/warclight/tree/v0.6.3) (2018-09-25)
+[Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.6.2...v0.6.3)
+
 ## [v0.6.2](https://github.com/archivesunleashed/warclight/tree/v0.6.2) (2018-09-25)
 [Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.6.1...v0.6.2)
 
