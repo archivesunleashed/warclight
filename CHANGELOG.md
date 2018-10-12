@@ -1,5 +1,14 @@
 # Change Log
 
+## [v0.7.0](https://github.com/archivesunleashed/warclight/tree/v0.7.0) (2018-10-12)
+[Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.6.3...v0.7.0)
+
+**Closed issues:**
+
+- Remove 'content' as a field search [\#47](https://github.com/archivesunleashed/warclight/issues/47)
+- Use the default webarchive-discovery Solr 7 config [\#46](https://github.com/archivesunleashed/warclight/issues/46)
+- Change field searches to use fields instead of handlers [\#45](https://github.com/archivesunleashed/warclight/issues/45)
+
 ## [v0.6.3](https://github.com/archivesunleashed/warclight/tree/v0.6.3) (2018-09-25)
 [Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.6.2...v0.6.3)
 
