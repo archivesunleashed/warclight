@@ -11,7 +11,7 @@ RSpec.describe Warclight::SolrDocument do
     end
 
     it 'writes a replay url based on memento time travel response' do
-      expect(document.replay_link).to eq '<a href="https://digital.library.yorku.ca/wayback/20150113163558/http://www.library.yorku.ca/robots.txt" target="_blank">https://digital.library.yorku.ca/wayback/20150113163558/http://www.library.yorku.ca/robots.txt</a> 🔗'
+      expect(document.replay_link).to eq '<a href="https://web.archive.org/web/20150112225831/https://www.library.yorku.ca/robots.txt" target="_blank">https://web.archive.org/web/20150112225831/https://www.library.yorku.ca/robots.txt</a> 🔗'
     end
 
     context 'when time_travel_response.empty?' do

@@ -19,6 +19,10 @@ module Warclight
       end
     end
 
+    def install_blacklight_range_limit
+      generate 'blacklight_range_limit:install'
+    end
+
     def add_custom_routes
       inject_into_file 'config/routes.rb', after: "mount Blacklight::Engine => '/'" do
         "\n    mount Warclight::Engine => '/'\n"
@@ -27,6 +31,7 @@ module Warclight
 
     def assets
       copy_file 'warclight.scss', 'app/assets/stylesheets/warclight.scss'
+      copy_file 'warclight.js', 'app/assets/javascripts/warclight.js'
       inject_into_file 'app/assets/javascripts/application.js', after: '//= require blacklight/blacklight' do
         "\n//= require bootstrap/scrollspy\n" \
         "\n//= require bootstrap/tab\n"

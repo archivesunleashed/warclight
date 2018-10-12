@@ -4,7 +4,7 @@ ENV['RAILS_ENV'] ||= 'test'
 
 require 'simplecov'
 SimpleCov.start do
-  add_filter '/.internal_test_app/'
+  add_filter '/.internal_test_gem/'
   add_filter '/spec/'
 end
 

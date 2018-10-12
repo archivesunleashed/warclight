@@ -3,6 +3,7 @@ require: rubocop-rspec
 AllCops:
   Exclude:
     - '.internal_test_app/**/*'
+    - '.internal_test_gem/**/*'
     - 'bin/**/*'
     - 'db/**/*'
     - 'lib/generators/warclight/templates/**/*'

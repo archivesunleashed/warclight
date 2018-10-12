@@ -16,7 +16,10 @@ class CatalogController < ApplicationController
 
     ## Default parameters to send to solr for all search-like requests. See also SearchBuilder#processed_parameters
     config.default_solr_params = {
-      rows: 10
+      rows: 10,
+      'q.alt': '*:*',
+      defType: 'edismax',
+      echoParams: 'explicit'
     }
 
     # solr field configuration for search results/index views
@@ -113,24 +116,20 @@ class CatalogController < ApplicationController
     # This one uses all the defaults set by the solr request handler. Which
     # solr request handler? The one set in config[:default_solr_parameters][:qt],
     # since we aren't specifying it otherwise.
-    config.add_search_field 'text', label: 'Text' do |field|
+    config.add_search_field 'text', label: 'All Text' do |field|
       field.include_in_simple_select = true
     end
 
     config.add_search_field 'title', label: 'Title' do |field|
-      field.qt = 'title_search'
-    end
-
-    config.add_search_field 'content', label: 'Content' do |field|
-      field.qt = 'content_search'
+      field.solr_parameters = { 'qf': 'title' }
     end
 
     config.add_search_field 'url', label: 'URL' do |field|
-      field.qt = 'url_search'
+      field.solr_parameters = { 'qf': 'url' }
     end
 
     config.add_search_field 'host', label: 'Host' do |field|
-      field.qt = 'host_search'
+      field.solr_parameters = { 'qf': 'host' }
     end
 
     # Field-based searches. We have registered handlers in the Solr configuration
