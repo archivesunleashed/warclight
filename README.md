@@ -54,7 +54,7 @@ $ bundle exec rake
 $ bundle exec rake warclight:server
 ```
 
-Then visit http://localhost:3000. It will also start a Solr instance on port 8983.
+Then visit [http://localhost:3000](http://localhost:3000). It will also start a Solr instance on port 8983.
 
 ### Run a console
 
@@ -69,7 +69,7 @@ To release a new version:
 
 ## Contributing
 
-[Bug reports](https://github.com/archivesunleashed/warclight/issues) and [pull requests](https://github.com/archivesunleashed/warclight/pulls) are welcome on WarcLight -- see [CONTRIBUTING.md](https://github.com/archivesunleashed/warclight/blob/master/CONTRIBUTING.md) for details.
+[Bug reports](https://github.com/archivesunleashed/warclight/issues) and [pull requests](https://github.com/archivesunleashed/warclight/pulls) are welcome on Warclight -- see [CONTRIBUTING.md](https://github.com/archivesunleashed/warclight/blob/master/CONTRIBUTING.md) for details.
 
 ## License
 
