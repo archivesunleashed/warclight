@@ -1,5 +1,8 @@
 # Change Log
 
+## [v0.7.1](https://github.com/archivesunleashed/warclight/tree/v0.7.1) (2018-10-15)
+[Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.7.0...v0.7.1)
+
 ## [v0.7.0](https://github.com/archivesunleashed/warclight/tree/v0.7.0) (2018-10-12)
 [Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.6.3...v0.7.0)
 
