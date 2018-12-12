@@ -57,6 +57,9 @@ RSpec/MultipleExpectations:
 RSpec/NestedGroups:
   Max: 4
 
+RSpec/DescribeClass:
+  Enabled: false
+
 Rails/TimeZone:
   Exclude:
     - 'app/models/concerns/warclight/solr_document.rb' #Come back to this later
@@ -66,9 +69,19 @@ Style/Documentation:
     - 'spec/**/*'
     - 'lib/warclight.rb'
 
+Style/ExpandPathArguments:
+  Exclude:
+    - warclight.gemspec
+    - lib/generators/warclight/install_generator.rb
+    - lib/generators/warclight/update_generator.rb
+
 Bundler/DuplicatedGem:
   Enabled: false
 
 Lint/UselessAssignment:
   Exclude:
     - 'app/models/concerns/warclight/solr_document.rb' #Come back to this later
+
+Style/RescueStandardError:
+  Exclude:
+    - app/helpers/warclight_helper.rb
