@@ -56,5 +56,6 @@ namespace :warclight do
     system('curl -o ".internal_test_app/tmp/warc-indexer.jar" "http://alpha.library.yorku.ca/warc-indexer.jar"')
     system('java -Djava.io.tmpdir=.internal_test_app/tmp -jar .internal_test_app/tmp/warc-indexer.jar -c .internal_test_app/solr/warclight_warc-indexer.conf -i "York University Libraries" -n "Test Collection" -u "12345" -s http://localhost:8983/solr/blacklight-core spec/fixtures/warcs/*.gz')
     system('curl "http://localhost:8983/solr/blacklight-core/update?commit=true&openSearcher=true"')
+    # rubocop:enable Metrics/LineLength
   end
 end
