@@ -9,11 +9,13 @@ RSpec.describe WarclightHelper, type: :helper do
         expect(helper.url_to_link(value: ['http://yorku.ca'])).to include('🔗')
       end
     end
+
     context 'when "url" responds with 404' do
       it 'prints "url" and (Not Available)' do
         expect(helper.url_to_link(value: ['http://www.yorku.ca/poutine.html'])).to include('Not available)')
       end
     end
+
     context 'when "url" does not respond with a status code' do
       it 'prints "url" and (Not Available)' do
         expect(helper.url_to_link(value: ['http://boycottmellenpress.com'])).to include('(Not available)')
@@ -27,6 +29,7 @@ RSpec.describe WarclightHelper, type: :helper do
         expect(helper.return_five(value: %w[a b c d e f])).to eq('a; b; c; d; e...')
       end
     end
+
     context 'when a field has less than 5 items' do
       it 'prints all items in the array, seperated by ";"' do
         expect(helper.return_five(value: %w[a b])).to eq('a; b')
