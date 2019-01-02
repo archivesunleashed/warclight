@@ -8,7 +8,7 @@ module WarclightHelper
       begin
         res = Net::HTTP.get_response(URI(url))
         if res.code.start_with?('1', '2', '3')
-          link_to(url, url, target: '_blank') << ' 🔗'
+          link_to(url, url, target: '_blank', rel: 'noopener') << ' 🔗'
         else
           url + ' (Not available)'
         end
