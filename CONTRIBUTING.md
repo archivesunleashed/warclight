@@ -4,19 +4,19 @@ If you are reading this document then you are interested in contributing Warclig
 
 ### Use cases
 
-If you would like to submit a use case for Warclight, please submit and issue [here](https://github.com/archivesunleashed/warclight/issues/new), and begin the issue title with "Use Case:".
+If you would like to submit a use case for Warclight, please submit and issue [here](https://github.com/archivesunleashed/warclight/issues/new), and begin the issue title with `Use Case:`.
 
 ### Documentation
 
-You can contribute documentation in two different ways. One way is to create an issue [here](https://github.com/archivesunleashed/warclight/issues/new) and begin the issue title with "Documentation:".
+You can contribute documentation in two different ways. One way is to create an issue [here](https://github.com/archivesunleashed/warclight/issues/new) and begin the issue title with `Documentation:`.
 
 ### Request a new feature
 
-To request a new feature you should [open an issue](https://github.com/archivesunleashed/warclight/issues/new) or create a use case as described above (see _use case_ section above), and summarize the desired functionality. Begin the issue title with "Enhancement:".
+To request a new feature you should [open an issue](https://github.com/archivesunleashed/warclight/issues/new) or create a use case as described above (see _use case_ section above), and summarize the desired functionality. Begin the issue title with `Enhancement:`.
 
 ### Report a bug
 
-To report a bug you should [open an issue](https://github.com/archivesunleashed/warclight/issues/new) that summarizes the bug, and begin the issue title with "Bug".
+To report a bug you should [open an issue](https://github.com/archivesunleashed/warclight/issues/new) that summarizes the bug, and begin the issue title with `Bug:`.
 
 In order to help us understand and fix the bug it would be great if you could provide us with:
 
