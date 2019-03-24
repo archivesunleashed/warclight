@@ -1,5 +1,23 @@
 # Change Log
 
+## [v0.8.0](https://github.com/archivesunleashed/warclight/tree/v0.8.0) (2019-03-24)
+[Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.7.1...v0.8.0)
+
+**Closed issues:**
+
+- Discussion: TimeTravel API is unreliable and should not be used [\#58](https://github.com/archivesunleashed/warclight/issues/58)
+
+**Merged pull requests:**
+
+- \[ruby\] Upgrade rubocop to version 0.65.0 [\#62](https://github.com/archivesunleashed/warclight/pull/62) ([depfu[bot]](https://github.com/apps/depfu))
+- \[ruby\] Upgrade rubocop to version 0.64.0 [\#61](https://github.com/archivesunleashed/warclight/pull/61) ([depfu[bot]](https://github.com/apps/depfu))
+- \[ruby\] Upgrade rubocop-rspec to version 1.32.0 [\#60](https://github.com/archivesunleashed/warclight/pull/60) ([depfu[bot]](https://github.com/apps/depfu))
+- \[ruby\] Upgrade rubocop to version 0.63.0 [\#59](https://github.com/archivesunleashed/warclight/pull/59) ([depfu[bot]](https://github.com/apps/depfu))
+- \[ruby\] Upgrade blacklight to version 7.0.1 [\#57](https://github.com/archivesunleashed/warclight/pull/57) ([depfu[bot]](https://github.com/apps/depfu))
+- Upgrade rubocop to version 0.61.1 [\#50](https://github.com/archivesunleashed/warclight/pull/50) ([depfu[bot]](https://github.com/apps/depfu))
+- Upgrade coffee-rails to version 4.2.2 [\#49](https://github.com/archivesunleashed/warclight/pull/49) ([depfu[bot]](https://github.com/apps/depfu))
+- \[ImgBot\] Optimize images [\#48](https://github.com/archivesunleashed/warclight/pull/48) ([imgbot[bot]](https://github.com/apps/imgbot))
+
 ## [v0.7.1](https://github.com/archivesunleashed/warclight/tree/v0.7.1) (2018-10-15)
 [Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.7.0...v0.7.1)
 
