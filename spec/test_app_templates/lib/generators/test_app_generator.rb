@@ -10,8 +10,7 @@ class TestAppGenerator < Rails::Generators::Base
   # after setting up the application
 
   def add_gems
-    # gem 'blacklight', '~> 6.0' # Leave commented out until Blacklight 7 drops
-
+    gsub_file 'Gemfile', /^gem ["']sqlite3["']$/, 'gem "sqlite3", "~> 1.3.13"'
     Bundler.with_clean_env do
       run 'bundle install'
     end

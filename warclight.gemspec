@@ -23,17 +23,18 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'blacklight', '7.0.1'
   s.add_dependency 'blacklight_range_limit', '7.0.0'
-  s.add_dependency 'rails', '~> 5.0'
+  s.add_dependency 'rails', '~> 5'
 
-  s.add_development_dependency 'bundler', '~> 1.14'
+  s.add_development_dependency 'bundler'
   s.add_development_dependency 'capybara'
-  s.add_development_dependency 'engine_cart'
+  s.add_development_dependency 'engine_cart', '~> 2.2.0'
   s.add_development_dependency 'mocha'
   s.add_development_dependency 'poltergeist'
   s.add_development_dependency 'rake', '~> 12.0'
   s.add_development_dependency 'rspec-rails', '~> 3.0'
-  s.add_development_dependency 'rubocop', '~> 0.65.0'
+  s.add_development_dependency 'rubocop', '~> 0.66.0'
   s.add_development_dependency 'rubocop-rspec', '~> 1.32.0'
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'solr_wrapper'
+  s.add_development_dependency 'sqlite3'
 end
