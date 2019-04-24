@@ -32,7 +32,7 @@ else
 
   case ENV['RAILS_VERSION']
   when /^4.2/
-    gem 'coffee-rails', '~> 4.2.2'
+    gem 'coffee-rails', '~> 5.0.0'
     gem 'responders', '~> 2.0'
     gem 'sass-rails', '>= 5.0'
   when /^4.[01]/
