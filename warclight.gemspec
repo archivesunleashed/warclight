@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.require_paths   = ['lib']
 
   s.add_dependency 'blacklight', '7.0.1'
-  s.add_dependency 'blacklight_range_limit', '7.0.0'
+  s.add_dependency 'blacklight_range_limit', '7.1.0'
   s.add_dependency 'rails', '~> 5'
 
   s.add_development_dependency 'bundler'
@@ -33,6 +33,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake', '~> 12.0'
   s.add_development_dependency 'rspec-rails', '~> 3.0'
   s.add_development_dependency 'rubocop', '~> 0.68.1'
+  s.add_development_dependency 'rubocop-performance'
   s.add_development_dependency 'rubocop-rspec', '~> 1.32.0'
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'solr_wrapper'
