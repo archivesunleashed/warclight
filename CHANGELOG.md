@@ -1,5 +1,18 @@
 # Change Log
 
+## [v0.8.3](https://github.com/archivesunleashed/warclight/tree/v0.8.3) (2019-05-13)
+[Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.8.2...v0.8.3)
+
+**Closed issues:**
+
+- Performance Cops will be removed from RuboCop 0.68. Use rubocop-performance gem instead. [\#66](https://github.com/archivesunleashed/warclight/issues/66)
+
+**Merged pull requests:**
+
+- \[ruby\] Upgrade rubocop to version 0.68.1 [\#68](https://github.com/archivesunleashed/warclight/pull/68) ([depfu[bot]](https://github.com/apps/depfu))
+- \[ruby\] Upgrade coffee-rails to version 5.0.0 [\#65](https://github.com/archivesunleashed/warclight/pull/65) ([depfu[bot]](https://github.com/apps/depfu))
+- \[ruby\] Upgrade rubocop to version 0.67.2 [\#64](https://github.com/archivesunleashed/warclight/pull/64) ([depfu[bot]](https://github.com/apps/depfu))
+
 ## [v0.8.2](https://github.com/archivesunleashed/warclight/tree/v0.8.2) (2019-03-25)
 [Full Changelog](https://github.com/archivesunleashed/warclight/compare/v0.8.1...v0.8.2)
 
