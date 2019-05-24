@@ -34,7 +34,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec-rails', '~> 3.0'
   s.add_development_dependency 'rubocop', '~> 0.70.0'
   s.add_development_dependency 'rubocop-performance'
-  s.add_development_dependency 'rubocop-rspec', '~> 1.32.0'
+  s.add_development_dependency 'rubocop-rspec', '~> 1.33.0'
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'solr_wrapper'
   s.add_development_dependency 'sqlite3'
