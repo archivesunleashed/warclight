@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'capybara'
-  s.add_development_dependency 'engine_cart', '~> 2.2.0'
+  s.add_development_dependency 'engine_cart', '~> 2.3.0'
   s.add_development_dependency 'mocha'
   s.add_development_dependency 'poltergeist'
   s.add_development_dependency 'rake', '~> 12.0'
