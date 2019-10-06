@@ -8,6 +8,10 @@
 
 A [Project Blacklight](http://projectblacklight.org/) based [Rails engine](http://guides.rubyonrails.org/engines.html) that supports the discovery of web archives held in the WARC and ARC formats. It allows faceted full-text search, record view, and other advanced discovery options.
 
+The following article provides a nice overview:
+
+Ruest, Nick, Milligan, Ian, and Lin, Jimmy. [Warclight: A Rails Engine for Web Archive Discovery](http://hdl.handle.net/10315/36159). Proceedings of the 2019 IEEE/ACM Joint Conference on Digital Libraries (JCDL 2019), June 2019, Urbana-Champaign, Illinois.
+
 ## Requirements
 
 * [Ruby](https://www.ruby-lang.org/en/) 2.2 or later
