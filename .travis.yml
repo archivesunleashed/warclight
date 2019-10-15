@@ -7,9 +7,11 @@ branches:
     - master
 rvm:
   - 2.7.0-preview1
-  - 2.6.3
-  - 2.5.5
-  - 2.4.6
+  - 2.6.5
+  - 2.5.7
+  - 2.4.9
+  - jruby-9.2.8.0
+
 jdk:
   - openjdk8
   - openjdk11
@@ -18,6 +20,7 @@ matrix:
   allow_failures:
     - jdk: openjdk11
     - rvm: 2.7.0-preview1
+    - rvm: jruby-9.2.8.0
 
 # Update to phantomjs 2.1.1 to fix issues with < 2
 # See https://github.com/travis-ci/travis-ci/issues/3225#issuecomment-177592725
