@@ -1,4 +1,3 @@
-require: rubocop-performance
 require: rubocop-rspec
 
 AllCops:
@@ -41,14 +40,6 @@ Metrics/AbcSize:
   Exclude:
     - 'app/models/concerns/warclight/solr_document.rb' #Come back to this later
 
-Performance/RegexpMatch:
-  Enabled: false
-
-Rails/OutputSafety:
-  Exclude:
-    - 'app/controllers/concerns/warclight/field_config_helpers.rb' # html_safe needs to be called to mimic BL JOIN behavior
-    - 'app/models/concerns/warclight/solr_document.rb'
-
 RSpec/ExampleLength:
   Enabled: false
 
@@ -61,7 +52,7 @@ RSpec/NestedGroups:
 RSpec/DescribeClass:
   Enabled: false
 
-Rails/TimeZone:
+Style/DateTime:
   Exclude:
     - 'app/models/concerns/warclight/solr_document.rb' #Come back to this later
 

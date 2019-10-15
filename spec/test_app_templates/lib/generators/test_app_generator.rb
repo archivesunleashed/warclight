@@ -10,7 +10,6 @@ class TestAppGenerator < Rails::Generators::Base
   # after setting up the application
 
   def add_gems
-    gsub_file 'Gemfile', /^gem ["']sqlite3["']$/, 'gem "sqlite3", "~> 1.3.13"'
     Bundler.with_clean_env do
       run 'bundle install'
     end
