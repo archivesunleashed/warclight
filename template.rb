@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 gem 'warclight', github: 'archivesunleashed/warclight'
-gem 'blacklight_range_limit', '7.0.0'
+gem 'blacklight_range_limit', '7.1'
 
 run 'bundle install'
 
