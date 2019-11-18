@@ -1,7 +1,5 @@
 sudo: false
 language: ruby
-notifications:
-  email: false
 branches:
   only:
     - master
