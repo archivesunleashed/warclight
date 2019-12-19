@@ -31,9 +31,6 @@ else
   end
 
   case ENV['RAILS_VERSION']
-  when /^5.[12]/, /^5.2/, /^6.0/
-    gem 'sass-rails', '~> 5.0'
-    gem 'sprockets', '< 4.0'
   when /^4.2/
     gem 'coffee-rails', '~> 4.1.0'
     gem 'responders', '~> 2.0'
