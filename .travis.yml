@@ -19,9 +19,6 @@ matrix:
     - rvm: 2.7.0-rc1
     - rvm: jruby-9.2.9.0
 
-before_install:
-  - bundle update
-
 notifications:
   email: false
   slack:
