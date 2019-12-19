@@ -4,7 +4,7 @@ branches:
   only:
     - master
 rvm:
-  - 2.7.0-rc1
+  - 2.7.0-preview3
   - 2.6.5
   - 2.5.7
   - jruby-9.2.9.0
@@ -16,7 +16,7 @@ jdk:
 matrix:
   allow_failures:
     - jdk: openjdk11
-    - rvm: 2.7.0-rc1
+    - rvm: 2.7.0-preview3
     - rvm: jruby-9.2.9.0
 
 notifications:
