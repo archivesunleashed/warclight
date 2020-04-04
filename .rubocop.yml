@@ -14,7 +14,7 @@ AllCops:
 Rails:
   Enabled: true
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
   Exclude:
     - 'Gemfile'
@@ -39,6 +39,12 @@ Metrics/BlockLength:
 Metrics/AbcSize:
   Exclude:
     - 'app/models/concerns/warclight/solr_document.rb' #Come back to this later
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
 
 RSpec/ExampleLength:
   Enabled: false
@@ -66,6 +72,15 @@ Style/ExpandPathArguments:
     - warclight.gemspec
     - lib/generators/warclight/install_generator.rb
     - lib/generators/warclight/update_generator.rb
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
 
 Bundler/DuplicatedGem:
   Enabled: false
