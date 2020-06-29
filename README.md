@@ -1,6 +1,6 @@
 # Warclight
-[![Build Status](https://travis-ci.org/archivesunleashed/warclight.svg?branch=master)](https://travis-ci.org/archivesunleashed/warclight)
-[![codecov](https://codecov.io/gh/archivesunleashed/warclight/branch/master/graph/badge.svg)](https://codecov.io/gh/archivesunleashed/warclight)
+[![Build Status](https://travis-ci.org/archivesunleashed/warclight.svg?branch=main)](https://travis-ci.org/archivesunleashed/warclight)
+[![codecov](https://codecov.io/gh/archivesunleashed/warclight/branch/main/graph/badge.svg)](https://codecov.io/gh/archivesunleashed/warclight)
 [![Gem Version](https://badge.fury.io/rb/warclight.svg)](https://badge.fury.io/rb/warclight)
 [![Contribution Guidelines](http://img.shields.io/badge/CONTRIBUTING-Guidelines-blue.svg)](./CONTRIBUTING.md)
 [![LICENSE](https://img.shields.io/badge/license-Apache-blue.svg?style=flat-square)](./LICENSE.txt)
@@ -74,7 +74,7 @@ To release a new version:
 
 ## Contributing
 
-[Bug reports](https://github.com/archivesunleashed/warclight/issues) and [pull requests](https://github.com/archivesunleashed/warclight/pulls) are welcome on Warclight -- see [CONTRIBUTING.md](https://github.com/archivesunleashed/warclight/blob/master/CONTRIBUTING.md) for details.
+[Bug reports](https://github.com/archivesunleashed/warclight/issues) and [pull requests](https://github.com/archivesunleashed/warclight/pulls) are welcome on Warclight -- see [CONTRIBUTING.md](https://github.com/archivesunleashed/warclight/blob/main/CONTRIBUTING.md) for details.
 
 ## License
 
