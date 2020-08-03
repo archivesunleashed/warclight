@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.require_paths   = ['lib']
 
   s.add_dependency 'blacklight', '7.10.0'
-  s.add_dependency 'blacklight_range_limit', '7.8.2'
+  s.add_dependency 'blacklight_range_limit', '7.9.0'
   s.add_dependency 'rails', '~> 5.0'
   s.add_dependency 'sprockets', '< 4.0'
 
