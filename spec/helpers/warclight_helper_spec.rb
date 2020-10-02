@@ -12,7 +12,7 @@ RSpec.describe WarclightHelper, type: :helper do
 
     context 'when "url" responds with 404' do
       it 'prints "url" and (Not Available)' do
-        expect(helper.url_to_link(value: ['http://www.yorku.ca/poutine.html'])).to include('Not available)')
+        expect(helper.url_to_link(value: ['https://ruebot.net/poutine.html'])).to include('(Not available)')
       end
     end
 

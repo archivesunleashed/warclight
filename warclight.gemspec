@@ -6,15 +6,16 @@ require 'warclight/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name            = 'warclight'
-  s.version         = Warclight::VERSION
-  s.authors         = ['Nick Ruest']
-  s.email           = ['ruestn@yorku.ca']
-  s.homepage        = 'https://github.com/archivesunleashed/warclight'
-  s.summary         = 'A Rails engine supporting discovery of web archives.'
-  s.license         = 'Apache-2.0'
+  s.name                  = 'warclight'
+  s.version               = Warclight::VERSION
+  s.authors               = ['Nick Ruest']
+  s.email                 = ['ruestn@yorku.ca']
+  s.homepage              = 'https://github.com/archivesunleashed/warclight'
+  s.summary               = 'A Rails engine supporting discovery of web archives.'
+  s.license               = 'Apache-2.0'
+  s.required_ruby_version = '>= 2.4'
 
-  s.files           = `git ls-files -z`.split("\x0").reject do |f|
+  s.files                 = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
   s.bindir          = 'exe'
