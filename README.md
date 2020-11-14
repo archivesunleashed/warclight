@@ -1,5 +1,4 @@
 # Warclight
-[![Build Status](https://travis-ci.org/archivesunleashed/warclight.svg?branch=main)](https://travis-ci.org/archivesunleashed/warclight)
 [![codecov](https://codecov.io/gh/archivesunleashed/warclight/branch/main/graph/badge.svg)](https://codecov.io/gh/archivesunleashed/warclight)
 [![Gem Version](https://badge.fury.io/rb/warclight.svg)](https://badge.fury.io/rb/warclight)
 [![Contribution Guidelines](http://img.shields.io/badge/CONTRIBUTING-Guidelines-blue.svg)](./CONTRIBUTING.md)
