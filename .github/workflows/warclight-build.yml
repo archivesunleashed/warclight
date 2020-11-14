@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby: [2.7.0-preview3, 2.6.5, 2.5.7, jruby-9.2.9.0]
+        ruby: [2.7, 2.6, 2.5]
     steps:
       - uses: actions/checkout@v2
       - name: Setup Ruby
