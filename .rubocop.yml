@@ -1,4 +1,6 @@
-require: rubocop-rspec
+require:
+  - rubocop-rails
+  - rubocop-rspec
 
 AllCops:
   Exclude:
@@ -13,6 +15,14 @@ AllCops:
 
 Rails:
   Enabled: true
+
+Rails/OutputSafety:
+  Exclude:
+    - 'app/models/concerns/warclight/solr_document.rb'
+
+Rails/RakeEnvironment:
+  Exclude:
+    - 'tasks/warclight.rake'
 
 Layout/LineLength:
   Max: 120
@@ -69,9 +79,9 @@ Style/Documentation:
 
 Style/ExpandPathArguments:
   Exclude:
-    - warclight.gemspec
-    - lib/generators/warclight/install_generator.rb
-    - lib/generators/warclight/update_generator.rb
+    - 'warclight.gemspec'
+    - 'lib/generators/warclight/install_generator.rb'
+    - 'lib/generators/warclight/update_generator.rb'
 
 Style/HashEachMethods:
   Enabled: true
@@ -82,6 +92,11 @@ Style/HashTransformKeys:
 Style/HashTransformValues:
   Enabled: true
 
+Style/StringConcatenation:
+  Exclude:
+    - 'app/helpers/warclight_helper.rb'
+    - 'app/models/concerns/warclight/solr_document.rb'
+
 Bundler/DuplicatedGem:
   Enabled: false
 
@@ -91,4 +106,4 @@ Lint/UselessAssignment:
 
 Style/RescueStandardError:
   Exclude:
-    - app/helpers/warclight_helper.rb
+    - 'app/helpers/warclight_helper.rb'
