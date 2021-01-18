@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.executables     = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
   s.require_paths   = ['lib']
 
-  s.add_dependency 'blacklight', '7.13.2'
+  s.add_dependency 'blacklight', '7.14.1'
   s.add_dependency 'blacklight_range_limit', '7.9.1'
   s.add_dependency 'rails', '~> 5.0'
   s.add_dependency 'sprockets', '< 4.0'
