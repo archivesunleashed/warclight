@@ -4,7 +4,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^7.18.0",
+    "eslint": "^7.19.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.2.0"
   },
