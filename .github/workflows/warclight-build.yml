@@ -11,15 +11,19 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby: [2.7, 2.6, 2.5]
+        ruby: [2.6, 2.7, 3.0]
     steps:
       - uses: actions/checkout@v2
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
+      - name: Setup Bundler (< 2.2)
+        run: gem uninstall bundler; gem install bundler -v '< 2.2'
       - name: Setup Node
         run: npm install
+      - name: Bundler version
+        run: which bundle; bundle --version
       - name: Setup Warclight
         run: bundle install
       - name: Run tests
