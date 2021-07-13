@@ -10,7 +10,7 @@ AllCops:
     - 'db/**/*'
     - 'lib/generators/warclight/templates/**/*'
     - 'vendor/**/*'
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.6
   DisplayCopNames: true
 
 Rails:

@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.homepage              = 'https://github.com/archivesunleashed/warclight'
   s.summary               = 'A Rails engine supporting discovery of web archives.'
   s.license               = 'Apache-2.0'
-  s.required_ruby_version = '>= 2.4'
+  s.required_ruby_version = '>= 2.6'
 
   s.files                 = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
@@ -22,9 +22,9 @@ Gem::Specification.new do |s|
   s.executables     = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
   s.require_paths   = ['lib']
 
-  s.add_dependency 'blacklight', '7.19.2'
+  s.add_dependency 'blacklight', '~> 7.2'
   s.add_dependency 'blacklight_range_limit', '8.0.0'
-  s.add_dependency 'rails', '~> 5.0'
+  s.add_dependency 'rails', '>= 5.1', '< 6.2'
   s.add_dependency 'sprockets', '< 4.0'
 
   s.add_development_dependency 'bundler', '> 1.14'
