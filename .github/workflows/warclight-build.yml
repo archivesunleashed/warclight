@@ -22,6 +22,8 @@ jobs:
         run: gem install bundler -v '< 2.2'
       - name: Setup Node
         run: npm install
+      - name: Bundler version
+        run: which bundle; bundle --version
       - name: Setup Warclight
         run: bundle install
       - name: Run tests
