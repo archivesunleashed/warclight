@@ -19,7 +19,7 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
       - name: Setup Bundler (< 2.2)
-        run: gem install bundler -v '< 2.2'
+        run: gem uninstall bundler; gem install bundler -v '< 2.2'
       - name: Setup Node
         run: npm install
       - name: Bundler version
