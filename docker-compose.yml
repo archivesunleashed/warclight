@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - ALPINE_RUBY_VERSION=3.14
+    depends_on:
+      - solr
+    ports:
+      - "3000:3000"
+    environment:
+      - SOLR_URL='http://solr:8983/solr/discovery'
+      - RAILS_VERSION= 5.2.4.1
+
+  solr:
+    image: ukwa/webarchive-discovery-solr
+    ports:
+      - "8983:8983"
