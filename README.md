@@ -65,6 +65,17 @@ Then visit [http://localhost:3000](http://localhost:3000). It will also start a 
 
 You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
+### Run with docker
+
+Ensure Docker is installed and configured.
+
+```sh
+$ docker-compose build
+$ docker-compose up
+```
+
+Then visit [http://localhost:3000](http://localhost:3000). It will also start a Solr instance on port 8983.
+
 ### Release a new version of the gem
 
 To release a new version:
