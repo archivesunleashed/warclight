@@ -1,4 +1,5 @@
-ARG ALPINE_RUBY_VERSION=3.14
+ARG ALPINE_RUBY_VERSION=3.11
+ARG RAILS_VERSION=5.2.6
 
 FROM ruby:alpine${ALPINE_RUBY_VERSION}
 
@@ -21,9 +22,9 @@ RUN gem update --system && \
   gem install bundler && \
   bundle config build.nokogiri --use-system-libraries
 
-RUN gem install rails
+COPY Gemfile warclight.gemspec template.rb ./
 
-COPY template.rb .
+RUN gem install rails --version 5.2.6
 
 RUN rails new warclight -m template.rb
 

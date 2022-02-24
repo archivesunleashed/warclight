@@ -6,14 +6,14 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        - ALPINE_RUBY_VERSION=3.14
+        - ALPINE_RUBY_VERSION=3.11
     depends_on:
       - solr
     ports:
       - "3000:3000"
     environment:
       - SOLR_URL='http://solr:8983/solr/discovery'
-      - RAILS_VERSION= 5.2.4.1
+      - RAILS_VERSION=5.2.6
 
   solr:
     image: ukwa/webarchive-discovery-solr
