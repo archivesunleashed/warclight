@@ -11,10 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby: [2.6, 2.7, 3.0]
+        rails_version: [5.2.4.4, 6.0.3.4, 6.1.1]
+        ruby: [2.6, 2.7]
     steps:
       - uses: actions/checkout@v2
-      - name: Setup Ruby
+      - name: Set up Java
+        uses: actions/setup-java@v1
+        with:
+          java-version: '8'
+      - name: Setup Ruby ${{ matrix.ruby }}
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
@@ -24,7 +29,7 @@ jobs:
         run: npm install
       - name: Bundler version
         run: which bundle; bundle --version
-      - name: Setup Warclight
+      - name: Setup Warclight with Rails ${{ matrix.rails_version }}
         run: bundle install
       - name: Run tests
         run: bundle exec rake
