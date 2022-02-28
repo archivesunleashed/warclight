@@ -13,9 +13,9 @@ Ruest, Nick, Milligan, Ian, and Lin, Jimmy. [Warclight: A Rails Engine for Web A
 
 ## Requirements
 
-* [Ruby](https://www.ruby-lang.org/en/) 2.6+ or later
+* [Ruby](https://www.ruby-lang.org/en/) 2.6 < 3.0
 * [Bundler](https://bundler.io/) < 2.2
-* [Rails](http://rubyonrails.org) 5.1+ or later
+* [Rails](http://rubyonrails.org) 5.1 < 6.2
 
 ## Installation
 
