@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'blacklight', '~> 7.2'
   s.add_dependency 'blacklight_range_limit', '8.2.1'
   s.add_dependency 'rails', '>= 5.1', '< 6.2'
-  s.add_dependency 'sprockets', '<= 4.0.3'
+  s.add_dependency 'sprockets', '<= 4.1.1'
 
   s.add_development_dependency 'bundler', '> 1.14'
   s.add_development_dependency 'capybara'
