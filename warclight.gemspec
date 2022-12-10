@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'mocha'
   s.add_development_dependency 'poltergeist'
   s.add_development_dependency 'rake', '~> 13.0'
-  s.add_development_dependency 'rspec-rails', '~> 5.0'
+  s.add_development_dependency 'rspec-rails', '~> 6.0'
   s.add_development_dependency 'rubocop', '~> 1.40.0'
   s.add_development_dependency 'rubocop-performance'
   s.add_development_dependency 'rubocop-rails'
