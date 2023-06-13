@@ -1,3 +1,11 @@
+# NOTE
+
+Warclight is no longer under active development. This repo has been set to public archive.
+
+If you're interested in web archive collections and Apache Solr, check out [SolrWayback](https://github.com/netarchivesuite/solrwayback). It uses the same underlying library as Warclight to index web archives into Solr, and offers many more features than Warclight.
+
+<3 AU Team
+
 # Warclight
 [![codecov](https://codecov.io/gh/archivesunleashed/warclight/branch/main/graph/badge.svg)](https://codecov.io/gh/archivesunleashed/warclight)
 [![Gem Version](https://badge.fury.io/rb/warclight.svg)](https://badge.fury.io/rb/warclight)
